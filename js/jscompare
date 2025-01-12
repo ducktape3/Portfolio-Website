@@ -1,0 +1,20 @@
+// JavaScript for Portfolio Website
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll("#works .filter-menu button");
+    const workItems = document.querySelectorAll("#works .grid-item");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.textContent;
+
+            workItems.forEach(item => {
+                if (filter === "All" || item.textContent.includes(filter)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+});
