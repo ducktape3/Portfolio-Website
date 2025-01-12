@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Harith.</a>
+        <nav>
+            <a href="#services">Service</a>
+            <a href="#skills">Skills</a>
+            <a href="#works">Work</a>
+            <a href="#" class="contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="text">
+            <h5>Hi, I'm Harith</h5>
+            <h1>MC111 Student & Aspiring Contentpreneur</h1>
+            <p>I specialize in creating innovative<br>
+                web solutions and designing captivating<br>
+                digital experiences.</p>
+            <button>Download CV</button>
+        </div>
+        <div class="circle"></div>
+    </section>
+
+    <section id="services">
+        <h2>My Service</h2>
+        <div class="grid">
+            <div class="grid-item">Web Development</div>
+            <div class="grid-item">Graphic Design</div>
+            <div class="grid-item">3D Modelling</div>
+            <div class="grid-item">Game Development</div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="grid">
+            <div class="grid-item">Skill 1</div>
+            <div class="grid-item">Skill 2</div>
+            <div class="grid-item">Skill 3</div>
+            <div class="grid-item">Skill 4</div>
+            <div class="grid-item">Skill 5</div>
+        </div>
+    </section>
+
+    <section id="works">
+        <h2>My Works</h2>
+        <div class="filter-menu">
+            <button>All</button>
+            <button>Work1</button>
+            <button>Work2</button>
+            <button>Work3</button>
+            <button>Work4</button>
+        </div>
+        <div class="grid">
+            <div class="grid-item">Work Item 1</div>
+            <div class="grid-item">Work Item 2</div>
+            <div class="grid-item">Work Item 3</div>
+            <div class="grid-item">Work Item 4</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info">
+            <p>hearth@mail.com</p>
+            <p>Location</p>
+            <p>123456789</p>
+        </div>
+        <div class="social">
+            <a href="#">Whatsapp</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+        <div class="copyright">Copyright by Ayam Sihir 2025</div>
+    </footer>
+
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
