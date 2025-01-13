@@ -18,9 +18,9 @@ body {
     --background-color: #fbefd5;
     --text-color: #030303;
     --primary-color: #ee5b07;
-    --secondary-color: #741e00;
+    --secondary-color: #f5e7d2;
     --highlight-color: #f14405;
-    --light-color: #f2f0e4;
+    --light-color: #fffbe1;
   }
   
   /* Dark Mode */
@@ -28,7 +28,7 @@ body {
     --background-color: #140d03;
     --text-color: #f2f0e4;
     --primary-color: #ee5b07;
-    --secondary-color: #f5e7d2;
+    --secondary-color: #741e00;
     --highlight-color: #f14405;
     --light-color: #212121;
   }
@@ -60,7 +60,7 @@ body {
   
   header nav ul li a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-weight: bold;
     font-size: 1.5rem;
     position: relative;
@@ -152,8 +152,9 @@ body {
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    background-color: transparent;
-    color: var(--highlight-color);
+    background-color: var(--light-color);
+    color: var(
+    --highlight-color);
     border: 2px solid;
     padding: 0.8rem 2rem;
     border-radius: 25px;
@@ -201,7 +202,7 @@ body {
   #hero .social-icon svg {
     height: 24px;
     width: 24px;
-    background-color: transparent;
+    background-color: var(--light-color);
     border: 2px solid;
     border-color: var(--highlight-color);
     border-radius: 25px;
@@ -353,7 +354,7 @@ body {
   }
 
   .skill-box {
-    background-color: var(--primary-color);
+    background-color: var(--light-color);
     color: #555;
     height: 160px;
     border: 2px solid transparent;
@@ -362,7 +363,6 @@ body {
     text-align: center;
     transition: background-color 0.5s ease, transform 0.5s ease, filter 0.5s ease;
     opacity: 1;
-    filter: grayscale(80%);
   }
 
   .skill-box:hover {
@@ -377,6 +377,7 @@ body {
     width: 90px;
     fill: var(--primary-color);
     /* transform: scale(1); */
+    filter: grayscale(0);
     transition: 0.5s ease;
   }
 
@@ -384,6 +385,7 @@ body {
     height: 90px;
     width: 70px;
     margin: 15px 0;
+    filter: grayscale(80%);
     transition: fill 0.5s ease, transform 0.5s ease;
   }
 
@@ -555,6 +557,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
+    color: #ffffff;
     background-color: var(--primary-color);
     gap: 2rem;
     padding: 1.5rem 4rem;
@@ -583,7 +586,7 @@ body {
   
   footer nav ul li a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-weight: bold;
     font-size: 1.5rem;
     position: relative;
@@ -656,7 +659,7 @@ body {
     text-align: center;
     margin-top: 1rem;
     padding: 20px;
-    color: var(--secondary-color);
+    color: var(--text-color);
   }
 
 /* Sticky Header */
