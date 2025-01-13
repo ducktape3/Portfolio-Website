@@ -126,6 +126,33 @@ document.querySelectorAll('header nav a').forEach(link => {
           localStorage.setItem('theme', 'light');
         }
       });
+
+      // Burger Menu Toggle
+      const burgerMenu = document.querySelector('.burger-menu');
+      const nav = document.querySelector('header nav');
+
+      burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+
+      // Ensure correct menu visibility on resize
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          nav.classList.remove('active');
+          burgerMenu.classList.remove('active');
+          nav.style.display = 'flex';
+        } else {
+          nav.style.display = 'none';
+        }
+      });
+
+      // Initial check
+      if (window.innerWidth > 768) {
+        nav.style.display = 'flex';
+      } else {
+        nav.style.display = 'none';
+      }
   });
   
   // Sticky Header
