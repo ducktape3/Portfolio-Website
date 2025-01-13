@@ -104,6 +104,28 @@ document.querySelectorAll('header nav a').forEach(link => {
               });
           });
       });
+
+      // Light/Dark Mode Toggle
+      const toggleSwitch = document.getElementById('switch');
+      const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+      if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+          toggleSwitch.checked = true;
+        }
+      }
+
+      toggleSwitch.addEventListener('change', function() {
+        if (toggleSwitch.checked) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+        }
+      });
   });
   
   // Sticky Header
